@@ -5,8 +5,7 @@ Simple [kafka](http://kafka.apache.org/) transport for [winston](https://github.
 ## Install
 
 ```sh
-npm install winston
-npm install winston-kafka-transport
+npm install winston winston-kafka-transport --save
 ```
 
 ## Usage
@@ -27,6 +26,7 @@ winston.add(winston.transports.Kafka, {
 * `connectionString` - Zookeeper connection string, (default `localhost:2181/kafka0.8`)
 * `clientId` - This is a user supplied identifier for the client application, (default `kafka-node-client`)
 * `zkOptions` - {Object} Zookeeper options, see [node-zookeeper-client](https://github.com/alexguan/node-zookeeper-client#client-createclientconnectionstring-options)
+* `meta` - {Object} Default meta data to add to each logged message (eg. {hostname: 'aws-server-hostname.com'})
 
 ## Testing
 Test coming soon...
