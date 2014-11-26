@@ -1,0 +1,30 @@
+{
+  "name": "winston-kafka-transport",
+  "version": "0.1.0",
+  "description": "Kafka transport for Winston",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigdatr/winston-kafka-transport.git"
+  },
+  "keywords": [
+    "winston",
+    "kafka",
+    "logging"
+  ],
+  "author": "Atridge D'Costa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bigdatr/winston-kafka-transport/issues"
+  },
+  "homepage": "https://github.com/bigdatr/winston-kafka-transport",
+  "dependencies": {
+    "kafka-node": "^0.2.11",
+    "lodash": "^2.4.1",
+    "util": "^0.10.3",
+    "winston": "^0.8.3"
+  }
+}
