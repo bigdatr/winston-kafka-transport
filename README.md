@@ -36,4 +36,4 @@ npm test
 ```
 
 ## License
-[MIT](https://github.com/bigdatr/winston-kafka-transport/blob/master/LICENSE)
+[BSD](https://github.com/bigdatr/winston-kafka-transport/blob/master/LICENSE)
