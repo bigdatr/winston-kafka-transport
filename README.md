@@ -27,6 +27,7 @@ winston.add(winston.transports.Kafka, {
 * `clientId` - This is a user supplied identifier for the client application, (default `kafka-node-client`)
 * `zkOptions` - {Object} Zookeeper options, see [node-zookeeper-client](https://github.com/alexguan/node-zookeeper-client#client-createclientconnectionstring-options)
 * `meta` - {Object} Default meta data to add to each logged message (eg. {hostname: 'aws-server-hostname.com'})
+* `level` - log level...
 
 ## Testing
 Test coming soon...

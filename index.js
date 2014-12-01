@@ -53,7 +53,8 @@ KafkaLogger.prototype.log = function (level, msg, meta, callback) {
         var payload = {
             msg: msg,
             level: level,
-            meta: _.defaults(meta, this.meta)
+            meta: _.defaults(meta, this.meta),
+            timestamp: new Date()
         };
 
         var payloads = [
