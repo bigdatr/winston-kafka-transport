@@ -42,7 +42,8 @@ var KafkaLogger = function (options) {
     producer.on('error', function () {
         _isConnected = false;
         var msg = 'winston-kafka-logger - Cannot connect to kafka server';
-        throw new Error(msg);
+        // throw new Error(msg);
+        console.error(msg);
     });
 };
 
@@ -61,7 +62,12 @@ KafkaLogger.prototype.log = function (level, msg, meta, callback) {
             { topic: this.topic, messages: [JSON.stringify(payload)] }
         ];
 
-        producer.send(payloads);
+        try {
+            producer.send(payloads);
+        }
+        catch(err) {
+            console.error('Failed to send log to kafka!!');
+        }
     }
 
     callback(null, true);
