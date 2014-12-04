@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var util = require('util'),
     winston = require('winston'),
@@ -39,11 +39,11 @@ var KafkaLogger = function (options) {
         _isConnected = true;
     });
 
-    producer.on('error', function () {
+    producer.on('error', function (err) {
         _isConnected = false;
         var msg = 'winston-kafka-logger - Cannot connect to kafka server';
         // throw new Error(msg);
-        console.error(msg);
+        console.error(msg, err);
     });
 };
 
