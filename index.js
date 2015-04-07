@@ -63,7 +63,9 @@ KafkaLogger.prototype.log = function (level, msg, meta, callback) {
         ];
 
         try {
-            producer.send(payloads);
+            producer.send(payloads, function() {
+                // Ignore
+            });
         }
         catch(err) {
             console.error('Failed to send log to kafka!!');
