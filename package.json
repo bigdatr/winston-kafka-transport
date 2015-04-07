@@ -1,6 +1,6 @@
 {
   "name": "winston-kafka-transport",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Kafka transport for Winston",
   "main": "index.js",
   "scripts": {
