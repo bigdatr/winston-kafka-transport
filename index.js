@@ -12,7 +12,7 @@ var Producer = kafka.Producer,
 var _isConnected = false;
 
 var KafkaLogger = function (options) {
-    this.name = 'KafkaLogger';
+    this.name = options.name || 'KafkaLogger';
     this.level = options.level || 'info';
     this.meta = options.meta || {};
 
